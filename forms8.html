@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+    <form>
+        <fieldset>
+            <!--fieldset is used to make outerboundaey on a form-->
+            <legend>Enquiry</legend>
+            <!--legend you to give heading in fieldset-->
+        Name:<input type="text" value="" placeholder="Enter your name here..." name="name" autofocus=""  maxlength="15"/>
+        <!--autofocus means when you open it cursor wil blink at that place automatically-->
+        <br/>
+        <br/>
+        Name:<input type="text" value="" placeholder="Enter your name here..." name="name" disabled=""  />
+        <!--disabled means i can write bu will not go to servert data-->
+        <br/>
+        <br/>
+        Name:<input type="text" value="Talha Malik" name="name" readonly=""/>
+        <!--readonly means i cant write can just read it-->
+        <br/>
+        <br/>
+        Color:<input type="color" name="color"  value="#FF0000"/>
+        <br/>
+        <br/>
+        Address:<textarea name="address"></textarea>
+        <br/>
+        <br/>
+        Gender:<input type="radio" value="m" name="Gender" checked=""/>Male
+        <input type="radio" value="f" name="Gender"/>Female
+        <br/>
+        <br/>
+        Country:<select>
+                <option>Please Select a Country</option>
+                <optgroup label="Northern">
+                    <option>Pakistan</option>
+                    <option>USA</option>
+                </optgroup>
+                <option>Qatar</option>
+                </select>
+        <br/>
+        <br/>
+        Hobbies:<input type="checkbox" name="Hobbies[]" />Video Games
+        <input type="checkbox" name="Hobbies[]" checked=""/>Reading
+        <input type="checkbox" name="Hobbies[]"/>Dancing
+        <br/>
+        <br/>
+        <input type="file" name="Image"/>
+        <br/>
+        <br/>
+        <input type="submit" name="Submit" value="Send"/>
+        <input type="reset"/>
+    </fieldset>
+    </form>
+    </body>
+</html>
